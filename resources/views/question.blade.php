@@ -48,15 +48,21 @@
 
                             <div class="card">
 
-                                <div class="card-body">{{$answer->body}}</div>
+                                <div class="card-body">{{$answer->body}}
+                                    <button class="btn btn-success float-right mr-2">👍</button>
+                                    <button class="btn btn-danger float-right mr-2" >👎</button>
 
-                                <div class="card-footer">                                    <a class="btn btn-primary float-right"
 
-                                                                                                href="{{ route('answer.show', ['question_id'=> $question->id,'answer_id' => $answer->id]) }}">
+
+                                </div>
+
+                                <div class="card-footer">
+                                    <a class="btn btn-primary float-right" href="{{ route('answer.show', ['question_id'=> $question->id,'answer_id' => $answer->id]) }}">
 
                                         View
 
-                                    </a>                                </div>
+                                    </a>
+                                </div>
 
                             </div>
 
